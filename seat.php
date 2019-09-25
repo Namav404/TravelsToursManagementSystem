@@ -24,10 +24,10 @@ if(isset($_POST['book'])) {
     $sno = implode(",", $_POST['Seat']);
     $query = "INSERT INTO seat (uname, sno, doj, dept, dest, time) VALUES ('$uname','$sno','$doj','$dept','$dest','$time')";
     $result = mysqli_query($db, $query);
-    $disp = '<div class="text-success text-center pt-1"><b>Seats booking was done successfully! Please check your mail</b></div>';
-    header('refresh:4;url=book.php'); // Redirect to booking page in 4 sec
+    $disp = '<div class="text-success text-center pt-1"><b>Seats booking was done successfully!</b></div>';
+    header('refresh:5;url=book.php'); // Redirect to booking page in 5 sec
 
-    if (mysqli_num_rows($result)>0) {
+    /*if (mysqli_num_rows($result)>0) {
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
         //Server settings
         $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -52,7 +52,12 @@ if(isset($_POST['book'])) {
                     <br>Timing: ".$time."<br><b>Happy Journey!</b>";
 
         $mail->send();
-    }
+        if (!$mail->send()) {
+            echo '<script>alert("Mailer Error: "'.$mail->ErrorInfo.'")</script>';
+        } else {
+            echo '<script>alert("Please check your Gmail!")</script>';
+        }
+    }*/
 }
 
 ?>
