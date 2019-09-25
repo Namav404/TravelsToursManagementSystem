@@ -79,3 +79,33 @@ hr {
 .box-con {
     border: 2px solid #ccc;
 }
+
+.bgimg1 {
+    background: url(../img/bg.jpg);
+    background-attachment: fixed;
+    padding: 18em;
+}
+.bgimg2 {
+    background: url(../img/fortagua.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 18em;
+}
+.bgimg3 {
+    background: url(../img/dp4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 18em;
+}
+.bgimg4 {
+    background: url(../img/pb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 18em;
+}
+.bgimg5 {
+    background: url(../img/sd1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 18em;
+}
