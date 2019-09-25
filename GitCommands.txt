@@ -1,0 +1,41 @@
+Command:- $ git init	Description:- Initialize a local Git repository.
+
+Configuring your profile
+Command:- $ git config --global user.email "you@example.com"	Description:- Configuring your email address globally.
+Command:- $ git config --global user.name "Your Name"	Description:- Configuring your name globally.
+
+Adding a new remote repository
+Command:- $ git remote add origin ssh://git@github.com/[username]/[repository-name].git
+
+For creating new repository
+Step 1 Initialize
+Step 2 Configuring your profile
+Step 3 Adding a new remote repository
+Step 4 Add all your files and commit
+Step 5 Push master branch
+Done!
+
+Creating a new branch
+Command:- $ git branch [branch name]		Description:- Create a new branch
+Command:- $ git branch -d [branch name]		Description:- Delete a branch
+Command:- $ git checkout [branch name]		Description:- Switch to a branch
+Command:- $ git branch -m [old branch name] [new branch name]		Description:- Rename a local branch
+Command:- $ git push -u origin [branch name]	Description:- Initially Pushing branch and changes to remote repository
+Done!
+
+Adding and commiting after changes
+Command:- $ git status		Description:- Check the status of changes
+Command:- $ git add .		Description:- Add all new and changed files to the staging area
+Command:- $ git commit -m "Commit Message"	Description:- Commit changes
+Command:- $ git push	Description:- Push changes to remote repository
+Done!
+
+Getting new commits and changes
+Command:- $ git status		Description:- Check the status of changes
+Command:- $ git add .		Description:- Add all new and changed files to the staging area
+Command:- $ git commit -m "Commit Message"	Description:- Commit changes
+Command:- $ git pull	Description:- Update local repository to the newest commit
+Command:- $ git pull origin [branch name]	Description:- Pull changes from remote repository
+Done!
+
+Merge exceptions
