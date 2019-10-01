@@ -39,3 +39,12 @@ Command:- $ git pull origin [branch name]	Description:- Pull changes from remote
 Done!
 
 Merge exceptions
+open vscode then check for the files which has label C
+click on that file and check for the errors at the scroll bar
+go to that section and if you want to accept  changes then click on accept current changes 
+else if you want to accept both then click on accept both changes 
+else click on accept  current changes for keeping your changes only.
+after previous steps resume to GitBash and type the following code
+1 	git add .
+2	git commit -m "your message"
+done.
