@@ -79,7 +79,9 @@ hr {
 .box-con {
     border: 2px solid #ccc;
 }
-
+.caro {
+    margin-top: 5em;
+}
 .bgimg1 {
     background: url(../img/bg.jpg);
     background-attachment: fixed;
@@ -108,7 +110,4 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     padding: 18em;
-}
-.caro {
-    margin-top: 5em;
 }
