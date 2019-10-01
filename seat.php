@@ -119,7 +119,7 @@ if(isset($_POST['book'])) {
             ?>
             <br>
             <input type="submit" class="mt-3 btn btn-primary" name="book" value="Book">
-            <a href="" class="mt-3 ml-2 btn btn-danger">Cancel</a>
+            <a href="cancel.php" class="mt-3 ml-2 btn btn-danger">Cancel</a>
         </form>
         <?php echo $disp; ?>
     </div>
