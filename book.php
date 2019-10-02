@@ -23,7 +23,7 @@
             <label class="pr-2">Date Of Journey</label>
             <input type="date" class="form-control" name="doj" required>
             <div class="form-group">
-                <label class="pl-4 pr-2">Departure</label>
+                <label class="pl-3 pr-2">Departure</label>
                 <select class="form-control" name="departure" required>
                     <option hidden></option>
                     <?php
@@ -35,7 +35,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label class="pl-4 pr-2">Destination</label>
+                <label class="pl-3 pr-2">Destination</label>
                 <select class="form-control" name="destination" required>
                     <option hidden></option>
                     <?php
@@ -47,7 +47,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label class="pl-4 pr-2">Timing</label>
+                <label class="pl-3 pr-2">Timing</label>
                 <select class="form-control" name="timing" required>
                     <option hidden></option>
                     <?php
@@ -59,6 +59,7 @@
                 </select>
             </div>
             <input type="submit" class="btn btn-primary ml-5" value="Check">
+            <a href="cancel.php" class="ml-2 btn btn-danger">Cancel</a>
         </form>
     </div>
 </body>

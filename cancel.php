@@ -4,6 +4,7 @@ require("session.php");
 if(isset($_GET['sno'])){
     $sno=$_GET['sno'];
     mysqli_query($db,"DELETE FROM seat WHERE sno='$sno'");
+    echo '<script>alert("Ticket was cancelled successfully!")</script>';
 }
 
 ?>
@@ -25,33 +26,37 @@ if(isset($_GET['sno'])){
 
 <body>
     <?php include("navbar.php"); ?>
-    <div class="container my-5">
-    <h3 class="text-center"> BOOKINGS DETAILS</h3>
-     <table class="table table-bordered my-4">
-         <tr>
-          <th>Departure</th>   
-          <th>Destination</th>   
-          <th>Date of Journey</th>   
-          <th>Seats</th>   
-          <th>Timing</th>
-          <th>Action </th>   
-         </tr>
-         <?php 
-         $result = mysqli_query($db,"SELECT * FROM seat WHERE uname='".$row['username']."'");
-         while($row = mysqli_fetch_array($result)){
-            echo '<tr> 
-                  <td>'.$row["dept"].'</td>
-                  <td>'.$row["dest"].'</td>
-                  <td>'.$row["doj"].'</td>
-                  <td>'.$row["sno"].'</td>
-                  <td>'.$row["time"].'</td>
-                  <td><a href="cancel.php?sno='.$row["sno"].'"><img src="img/delete.png" width="20"></td></tr>';
-
-         }
-
-         ?>
-     </table>
-</div>
+    <div class="container my-5 px-5">
+        <h3 class="text-center">BOOKING DETAILS</h3>
+        <table class="table table-bordered my-4">
+            <tr>
+                <th>Date of Journey</th>
+                <th>Departure</th>
+                <th>Destination</th>
+                <th>Timing</th>
+                <th>Seat No</th>
+                <th>Action </th>
+            </tr>
+            <?php 
+            $result = mysqli_query($db,"SELECT * FROM seat WHERE uname='".$row['username']."'");
+            if(mysqli_num_rows($result) == 0) {
+                echo '<tr><td colspan="6"><h5 class="text-danger text-center">No Bookings Available!</h5></td></tr>';
+            } else {
+                while($row = mysqli_fetch_array($result)){
+                echo '<tr> 
+                    <td>'.$row["doj"].'</td>
+                    <td>'.$row["dept"].'</td>
+                    <td>'.$row["dest"].'</td>
+                    <td>'.$row["time"].'</td>
+                    <td>'.$row["sno"].'</td>
+                    <td><a href="cancel.php?sno='.$row["sno"].'">
+                    <img src="img/delete.png" class="mx-auto d-block" title="Delete" width="20">
+                    </td></tr>';
+                }
+            }
+            ?>
+        </table>
+    </div>
 </body>
 
 </html>

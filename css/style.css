@@ -85,6 +85,7 @@ hr {
 .bgimg1 {
     background: url(../img/bg.jpg);
     background-attachment: fixed;
+    background-size: cover;
     padding: 18em;
 }
 .bgimg2 {
@@ -94,13 +95,13 @@ hr {
     padding: 18em;
 }
 .bgimg3 {
-    background: url(../img/dp4.jpg);
+    background: url(../img/dp1.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 18em;
 }
 .bgimg4 {
-    background: url(../img/pb.jpg);
+    background: url(../img/pb1.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 18em;

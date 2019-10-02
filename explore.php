@@ -18,10 +18,10 @@
 <body>
     <?php include("navbar.php"); ?>
     <div class="container-fluid">
-        <h1 class="text-center text-uppercase pt-5"> Convent of St Cajetan Church</h1>
+        <h1 class="text-center pt-5">CONVENT OF ST CAJETAN CHURCH</h1>
         <div class="row p-3">
             <div class="col-sm-8">
-                <p style="font-size: 22px;">
+                <p style="font-size:20px;">
                     Modelled on the original design of St Peter’s in Rome, this impressive church was built by Italian
                     friars of the Order of Theatines, sent here by Pope Urban VIII to preach Christianity in the kingdom
                     of Golconda (near Hyderabad). The friars, however, were refused entry to Golconda, so settled
@@ -45,13 +45,13 @@
     </div>
     <div class="bgimg1"></div>
     <div class="container-fluid">
-        <h1 class="text-center text-uppercase pt-5"> Basilica of Bom Jesus</h1>
+        <h1 class="text-center pt-5">BASILICA OF BOM JESUS</h1>
         <div class="row p-3">
             <div class="col-sm-6">
                 <img src="img/bbj.jpg" alt="Basilica of Bom Jesus" width="630" height="417">
             </div>
             <div class="col-sm-6">
-                <p style="font-size: 17px;">
+                <p style="font-size:17px;">
                     The Basilica of Bom Jesus is a Roman Catholic basilica located in Goa, India, and is part of the
                     Churches and convents of Goa UNESCO World Heritage Site.The basilica is located in Old Goa, former
                     capital of Portuguese India, and holds the mortal remains of St. Francis Xavier. <br>
@@ -70,10 +70,10 @@
     </div>
     <div class="bgimg2"></div>
     <div class="container-fluid">
-        <h1 class="text-center text-uppercase pt-5"> Aguada Fort</h1>
+        <h1 class="text-center pt-5">AGUADA FORT</h1>
         <div class="row p-3">
             <div class="col-sm-6">
-                <p style="font-size: 18px;">
+                <p style="font-size:17px;">
                     Fort Aguada is a well-preserved seventeenth-century Portuguese fort, along with a lighthouse,
                     standing in Goa, India, on Sinquerim Beach, overlooking the Arabian Sea. The fort was constructed in
                     1612 to guard against the Dutch and the Marathas. It was a reference
@@ -95,13 +95,13 @@
     </div>
     <div class="bgimg3"></div>
     <div class="container-fluid">
-        <h1 class="text-center text-uppercase pt-5"> Dona Paula</h1>
+        <h1 class="text-center pt-5">DONA PAULA</h1>
         <div class="row p-3">
             <div class="col-sm-6">
-                <img src="img/afg.jpg" alt="Aguada Fort" width="630" height="417">
+                <img src="img/dp2.jpg" alt="Dona Paula" width="630" height="417">
             </div>
             <div class="col-sm-6">
-                <p style="font-size: 18px;">
+                <p style="font-size: 20px;">
                     Dona Paula is a former village, and tourist destination, in the suburbs of Panaji, Goa, India. It is
                     today home to the National Institute of Oceanography, and just alongside it lie the Goa University
                     and the International Centre Goa. It is also home to a number of hotels, small and large, and the
@@ -114,13 +114,13 @@
     </div>
     <div class="bgimg4"></div>
     <div class="container-fluid">
-        <h1 class="text-center text-uppercase pt-5"> Palolem Beach</h1>
+        <h1 class="text-center pt-5">PALOLEM BEACH</h1>
         <div class="row p-3">
             <div class="col-sm-6">
-                <img src="img/Palolem-Beach-1.jpg" alt="Palolem Beach" width="630" height="417">
+                <img src="img/pb2.jpg" alt="Palolem Beach" width="630" height="417">
             </div>
             <div class="col-sm-6">
-                <p style="font-size: 18px;">
+                <p style="font-size: 20px;">
                     Palolem Beach is situated in Canacona in southern Goa, India. <br>
                     It is a peaceful beach with a picturesque view set amidst the rural village of the Portuguese. It
                     has a beautiful crescent shape that offers spectacular views to tourists. Ideal for relaxation it is
@@ -129,21 +129,23 @@
                 </p>
             </div>
         </div>
-        <div class="bgimg5"></div>
-        <div class="container-fluid">
-            <h1 class="text-center text-uppercase pt-5"> Salaulim Dam</h1>
-            <div class="row p-3">
-                <div class="col-sm-6">
-                    <img src="img/sd2.jpg" alt="Salaulim Dam<" width="630" height="417">
-                </div>
-                <div class="col-sm-6">
-                    <p style="font-size: 18px;">
-                        The Salaulim Dam is located on the Salaulim River, a tributary of the Zuari River in Goa, India,
-                        is an integral component of the Salaulim Irrigation Project which envisages benefits of
-                        irrigation and drinking water supply.
-                    </p>
-                </div>
+    </div>
+    <div class="bgimg5"></div>
+    <div class="container-fluid">
+        <h1 class="text-center pt-5">SALAULIM DAM</h1>
+        <div class="row p-3">
+            <div class="col-sm-6">
+                <img src="img/sd2.jpg" alt="Salaulim Dam<" width="630" height="417">
             </div>
+            <div class="col-sm-6">
+                <p style="font-size: 20px;">
+                    The Salaulim Dam is located on the Salaulim River, a tributary of the Zuari River in Goa, India,
+                    is an integral component of the Salaulim Irrigation Project which envisages benefits of
+                    irrigation and drinking water supply.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
