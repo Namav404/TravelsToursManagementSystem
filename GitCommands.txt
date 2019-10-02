@@ -23,6 +23,7 @@ Command:- $ git branch -m [old branch name] [new branch name]		Description:- Ren
 Command:- $ git push -u origin [branch name]	Description:- Initially Pushing branch and changes to remote repository
 Done!
 
+
 Adding and commiting after changes
 Command:- $ git status		Description:- Check the status of changes
 Command:- $ git add .		Description:- Add all new and changed files to the staging area
@@ -48,3 +49,5 @@ after previous steps resume to GitBash and type the following code
 1 	git add .
 2	git commit -m "your message"
 done.
+
+press esc then press i key, enter your message, press esc then type the following code ":wq" and then press enter
