@@ -40,7 +40,7 @@ if(isset($_GET['sno'])){
             <?php 
             $result = mysqli_query($db,"SELECT * FROM seat WHERE uname='".$row['username']."'");
             if(mysqli_num_rows($result) == 0) {
-                echo '<tr><td colspan="6"><h5 class="text-danger text-center">No Bookings Available!</h5></td></tr>';
+                echo '<tr><td colspan="6"><h5 class="error text-center">No Bookings Available!</h5></td></tr>';
             } else {
                 while($row = mysqli_fetch_array($result)){
                 echo '<tr> 

@@ -18,7 +18,14 @@ a.nav-link.menu-lnk:hover:after {
   left: 0;
   background: #fff;
 }
-nav a img {
+nav.navbar {
+    background-color: #000;
+}
+.footer {
+    background-color: #000;
+    padding: 1em 2em;
+}
+.footer img {
     height: 24px;
     padding: 0px 7px;
 }
@@ -72,15 +79,14 @@ hr {
 .sideline {
     border-right: 1px solid #ccc;
 }
-.box-sm {
-    background: #ddd;
-    padding: 16em 24em 16.3em;
-}
 .box-con {
     border: 2px solid #ccc;
 }
+.bg-con {
+    background-color: #000;
+}
 .caro {
-    margin-top: 5em;
+    padding: 3em;
 }
 .bgimg1 {
     background: url(../img/bg.jpg);
@@ -111,4 +117,10 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     padding: 18em;
+}
+.bghome {
+    background-image: url(../img/bg2.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13em 0px;
 }

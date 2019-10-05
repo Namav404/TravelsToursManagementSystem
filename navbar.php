@@ -2,7 +2,7 @@
 <head>
     <script src="js/bootstrap.min.js"></script>
 </head>
-<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark">
     <p class="navbar-brand">TOURS & TRAVELS</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -26,15 +26,6 @@
             </li>
         </ul>
     </div>
-</nav>
-<nav class="navbar fixed-bottom navbar-expand-sm bg-primary">
-    <span class="text-white ml-4">&copy; <i>2019 Tours & Travels Private Limited</i></span>
-    <span class="ml-auto mr-4">
-        <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
-        <a href="https://in.linkedin.com" target="_blank"><img src="img/linkedin.png"></a>
-        <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
-    </span>
 </nav>
 <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-sm">
