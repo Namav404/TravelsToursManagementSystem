@@ -13,10 +13,22 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery/popper.min.js"></script>
     <script src="jquery/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(207, 86, 86);
+            padding: 5em;
+        
+        }
+        
+        
+    </style>
 </head>
 
 <body>
+    
+   
     <?php include("navbar.php"); ?>
+     
     <div class="container caro text-center">
         <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -27,29 +39,34 @@
             </ul>
             <!-- The slideshow -->
             <div class="carousel-inner">
+                
+                <div class="carousel-item ">
+                    <img src="img/dd1 (2).jpg" height="450" width="900" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imc.jpg" height="450" width="900" alt="Chicago">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/three.jpg" height="450" width="900" alt="New York">
+                </div>
                 <div class="carousel-item active">
-                    <img src="img/dd1 (2).jpg" height="450" width="1200" alt="Los Angeles">
+                    <img src="img/bom.jpg" height="450" width="900" alt="New York">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/imc.jpg" height="450" width="800" alt="Chicago">
+                    <img src="img/ds.jpg" height="450" width="900" alt="New York">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/dd1 (2).jpg" height="450" width="1200" alt="New York">
+                    <img src="img/mant.jpg" height="450" width="900" alt="New York">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/dd1 (2).jpg" height="450" width="1200" alt="New York">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/ds.jpg" height="450" width="800" alt="New York">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/dd1 (2).jpg" height="450" width="1200" alt="New York">
+                    <img src="img/butt.jpg" height="450" width="900" alt="New York">
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/dd1 (2).jpg" height="450" width="1200" alt="New York">
+                <img src="img/butt.jpg" height="450" width="900" alt="New York">
             </div>
         </div>
+        
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -58,6 +75,8 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
+    
+   
 </body>
 
 </html>

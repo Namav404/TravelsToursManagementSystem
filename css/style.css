@@ -81,6 +81,9 @@ hr {
 }
 .caro {
     margin-top: 5em;
+    
+    border-radius: 20px;
+   
 }
 .bgimg1 {
     background: url(../img/bg.jpg);

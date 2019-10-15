@@ -2,7 +2,7 @@
 <head>
     <script src="js/bootstrap.min.js"></script>
 </head>
-<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
     <p class="navbar-brand">TOURS & TRAVELS</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <span class="navbar-toggler-icon"></span>
