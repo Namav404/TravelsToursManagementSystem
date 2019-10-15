@@ -36,16 +36,17 @@ if(isset($_POST['post'])) {
                 <h4 class="py-2">Leave your message</h4>
                 <form method="POST">
                     <textarea class="form-control" name="message" rows="4" cols="60" required></textarea>
-                    <input type="submit" class="btn btn-sm btn-primary my-3" name="post" value="Message">
+                    <input type="submit" class="btn btn-sm btn-warning my-3 text-white" name="post" value="Message">
                 </form>
             </div>
-            <div class="col-sm-6 p-5 bg-primary text-white">
+            <div class="col-sm-6 p-5 text-white bg-con">
                 <h2 class="text-center py-3">Contact Information</h2>
                 <p class="pl-4 pt-4"><img src="img/location.png"> New York, 94126, USA</p>
                 <p class="pl-4"><img src="img/phone.png"> + 01 234 567 89</p>
                 <p class="pl-4 pb-4"><img src="img/filled-message.png"> toursntravelsnyc@gmail.com</p>
             </div>
         </div>
+        <p class="text-center pt-4" style="font-size:1.5em;">View All Comments</p>
         <?php
         $res = mysqli_query($db, "SELECT * FROM message ORDER BY id DESC");
         while($rows = mysqli_fetch_array($res)) {

@@ -35,19 +35,25 @@ Getting new commits and changes
 Command:- $ git status		Description:- Check the status of changes
 Command:- $ git add .		Description:- Add all new and changed files to the staging area
 Command:- $ git commit -m "Commit Message"	Description:- Commit changes
-Command:- $ git pull	Description:- Update local repository to the newest commit
+Command:- $ git pull	Description:- Check for the newest commit
 Command:- $ git pull origin [branch name]	Description:- Pull changes from remote repository
 Done!
 
-Merge exceptions
-open vscode then check for the files which has label C
-click on that file and check for the errors at the scroll bar
-go to that section and if you want to accept  changes then click on accept current changes 
-else if you want to accept both then click on accept both changes 
-else click on accept  current changes for keeping your changes only.
-after previous steps resume to GitBash and type the following code
-1 	git add .
-2	git commit -m "your message"
-done.
+Merge Exceptions
+Step 1 Open VS Code, open your project folder and check for the files which has label C(Conflicts)
+Step 2 Click on that file and check for the errors at the scroll bar
+Step 3 Go to that section and click any of the following options:-
+    Click on 'Accept Current Changes' for keeping your changes
+    Click on 'Accept Incoming Changes' for accepting incoming changes which will discard your changes
+    Click on 'Accept Both Changes' for keeping both your and incoming changes
+Step 3 Resume to GitBash and type the following code:-
+$ git add .
+$ git commit -m "your message"
+Done!
 
-press esc then press i key, enter your message, press esc then type the following code ":wq" and then press enter
+Type 2 Merge Exception
+For this check the snapshots merge1,merge2,merge3 in the img folder
+Step 1 Press ESC then press I key   (merge1)
+Step 2 Enter your message      (merge2)
+Step 3 Press ESC and type ':wq' and then press Enter    (merge3)
+Done!
