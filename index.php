@@ -13,15 +13,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery/popper.min.js"></script>
     <script src="jquery/jquery.min.js"></script>
-    <style>
-        body{
-            background-color: rgb(207, 86, 86);
-            padding: 5em;
-        
-        }
-        
-        
-    </style>
 </head>
 
 <body>
@@ -37,36 +28,30 @@
         <div class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- The slideshow -->
             <div class="carousel-inner">
-                
-                <div class="carousel-item ">
-                    <img src="img/dd1 (2).jpg" height="450" width="900" alt="Los Angeles">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/imc.jpg" height="450" width="900" alt="Chicago">
-                </div>
-                <div class="carousel-item ">
-                    <img src="img/three.jpg" height="450" width="900" alt="New York">
-                </div>
                 <div class="carousel-item active">
-                    <img src="img/bom.jpg" height="450" width="900" alt="New York">
+                    <img src="img/bom.jpg" height="450" width="900">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/three.jpg" height="450" width="900">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/ds.jpg" height="450" width="900" alt="New York">
+                    <img src="img/imc.jpg" height="450" width="900">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/mant.jpg" height="450" width="900" alt="New York">
+                    <img src="img/ds.jpg" height="450" width="900">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/butt.jpg" height="450" width="900" alt="New York">
+                    <img src="img/mant.jpg" height="450" width="900">
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/butt.jpg" height="450" width="900" alt="New York">
+                <div class="carousel-item">
+                    <img src="img/butt.jpg" height="450" width="900">
+                </div>
             </div>
         </div>
     </div>
+    
     <div class="footer">
-        <span class="text-white ml-4">&copy; <i>2019 Tours & Travels Private Limited</i></span>
+        <span class="text-white ml-5">&copy; <i>2019 Tours & Travels Private Limited</i></span>
         <span class="float-right mr-4">
             <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>

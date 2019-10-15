@@ -19,7 +19,7 @@
     <?php include("navbar.php"); ?>
     <div class="container-fluid">
         <h1 class="text-center pt-5">CONVENT OF ST CAJETAN CHURCH</h1>
-        <div class="row p-3">
+        <div class="row p-5">
             <div class="col-sm-8">
                 <p style="font-size:20px;">
                     Modelled on the original design of St Peter’s in Rome, this impressive church was built by Italian
