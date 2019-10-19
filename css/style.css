@@ -23,11 +23,11 @@ nav.navbar {
 }
 .footer {
     background-color: #000;
-    padding: 1em 2em;
+    padding: 2em 2em;
 }
 .footer img {
-    height: 24px;
-    padding: 0px 7px;
+    height: 36px;
+    margin: 7px 7px;
 }
 .l_panel {
     background: url(../img/bg_img.jpg);

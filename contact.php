@@ -41,12 +41,12 @@ if(isset($_POST['post'])) {
             </div>
             <div class="col-sm-6 p-5 text-white bg-con">
                 <h2 class="text-center py-3">Contact Information</h2>
-                <p class="pl-4 pt-4"><img src="img/location.png"> New York, 94126, USA</p>
+                <p class="pl-4 pt-4"><img src="img/location.png"> G10 Almira Appts, Platto, 18th June Road, Panaji.</p>
                 <p class="pl-4"><img src="img/phone.png"> + 01 234 567 89</p>
-                <p class="pl-4 pb-4"><img src="img/filled-message.png"> toursntravelsnyc@gmail.com</p>
+                <p class="pl-4 pb-4"><img src="img/filled-message.png"> toursntravelsinc@gmail.com</p>
             </div>
         </div>
-        <p class="text-center pt-4" style="font-size:1.5em;">View All Comments</p>
+        <p class="text-center pt-4" style="font-size:1.5em;">View Recent Comments</p>
         <?php
         $res = mysqli_query($db, "SELECT * FROM message ORDER BY id DESC");
         while($rows = mysqli_fetch_array($res)) {

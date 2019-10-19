@@ -13,10 +13,10 @@
                 <a class="nav-link menu-lnk" href="book_admin.php">ADD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link menu-lnk" href="">VIEW</a>
+                <a class="nav-link menu-lnk" href="book_view.php">VIEW</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link menu-lnk" href="">FEEDBACK</a>
+                <a class="nav-link menu-lnk" href="feedback.php">FEEDBACK</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link menu-lnk" href="session.php?logout">LOGOUT</a>
