@@ -1,13 +1,4 @@
-<?php
-require("session.php");
-
-if(isset($_GET['sno'])){
-    $sno=$_GET['sno'];
-    mysqli_query($db,"DELETE FROM seat WHERE sno='$sno'");
-    echo '<script>alert("Ticket was cancelled successfully!")</script>';
-}
-
-?>
+<?php require("session.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -30,6 +21,19 @@ if(isset($_GET['sno'])){
         <h3 class="text-center">BOOKING DETAILS</h3>
         <table class="table table-bordered my-4">
             <tr>
+                <td colspan="5">
+                    <form method="POST">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="text" placeholder="Search.....">
+                            <div class="input-group-append">
+                                <span class="input-froup-text"><input type="submit" name="search"
+                                        class="btn btn-primary" value="Search"></span>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
                 <th>Date of Journey</th>
                 <th>Departure</th>
                 <th>Destination</th>
@@ -39,15 +43,34 @@ if(isset($_GET['sno'])){
             <?php 
             $result = mysqli_query($db,"SELECT * FROM seat ORDER BY id DESC");
             if(mysqli_num_rows($result) == 0) {
-                echo '<tr><td colspan="6"><h5 class="error text-center">No Bookings Available!</h5></td></tr>';
+                echo '<tr><td colspan="5"><h5 class="error text-center">No Bookings Available!</h5></td></tr>';
             } else {
-                while($row = mysqli_fetch_array($result)){
-                echo '<tr> 
-                    <td>'.$row["doj"].'</td>
-                    <td>'.$row["dept"].'</td>
-                    <td>'.$row["dest"].'</td>
-                    <td>'.$row["time"].'</td>
-                    <td>'.$row["sno"].'</td></tr>';
+                if(isset($_POST['search'])) {
+                    $search = $_POST['text'];
+                    $query = "SELECT * FROM seat WHERE uname LIKE '%".$search."%' || sno LIKE '%".$search."%' || doj LIKE '%".$search."%'
+                    || dept LIKE '%".$search."%' || dest LIKE '%".$search."%' || time LIKE '%".$search."%'";
+                    $result = mysqli_query($db, $query);
+                    if(mysqli_num_rows($result)==0) {
+                        echo '<tr><td colspan="5"><h5 class="error text-center">Your search did not match!</h5></td></tr>';
+                    } else {
+                    while($row = mysqli_fetch_array($result)){
+                        echo '<tr> 
+                            <td>'.$row["doj"].'</td>
+                            <td>'.$row["dept"].'</td>
+                            <td>'.$row["dest"].'</td>
+                            <td>'.$row["time"].'</td>
+                            <td>'.$row["sno"].'</td></tr>';
+                        }
+                    }
+                } else {
+                    while($row = mysqli_fetch_array($result)){
+                        echo '<tr> 
+                            <td>'.$row["doj"].'</td>
+                            <td>'.$row["dept"].'</td>
+                            <td>'.$row["dest"].'</td>
+                            <td>'.$row["time"].'</td>
+                            <td>'.$row["sno"].'</td></tr>';
+                    }
                 }
             }
             ?>
